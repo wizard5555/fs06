@@ -14,8 +14,10 @@ function editar() {
     return "Editando veiculo";
 }
 
-function excluir() {
-    return "Excluindo veiculo";
+async function excluir(id) {
+    let sql = "DELETE FROM tb_veiculo WHERE id="+id;
+
+    await database.executar(sql);
 }
 
 module.exports = {  
