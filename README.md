@@ -20,3 +20,25 @@ Após baixar a aplicação, entre no diretório através do terminal e execute:
 Acesse seu cliente de terminal do seu Banco de Dados;
 
 > Copie e execute os comandos que estao no arquivo `/db.sql`;
+
+#### Credenciais
+Abra o arquivo que se encontra no caminho `/connection/databaseConnection.js`
+e edite as seguintes linhas de acordo com suas credenciais do banco de dados:
+
+```js
+{
+    host: 'localhost',
+    user: 'root',
+    password: '1234',
+    database: 'fs06_api'
+}
+
+```
+
+### Executar o projeto
+Para executar o projeto no diretório da aplicação através do terminal, execute:
+`nodemon index.js` ou `node index.js`
+
+Sua API estará disponível nos endereços:
+- http://localhost:8000/clientes
+- http://localhost:8000/veiculos

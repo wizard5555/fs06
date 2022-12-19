@@ -4,8 +4,8 @@ async function executar(sql) {
     const conexao = await mysql.createConnection({
         host: 'localhost',
         user: 'root',
-        password: '1234',
-        database: 'fs06_teste'
+        password: 'D1@9n7i8',
+        database: 'fs06_api'
     });
 
     const [results] = await conexao.execute(sql);
